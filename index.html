@@ -1,0 +1,58 @@
+<!-- result: great, good, bad -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="question"></h1>
+      <div>
+        <p class="quest-index"></p>
+      </div>
+      <div class="questions">
+        <!-- <article class="quest">
+          <input type="radio" name="questbox" id="quest-1" />
+          <label for="quest-1" class="answer-title"></label>
+        </article> -->
+      </div>
+      <div class="buttons">
+        <button class="result-button">Results</button>
+        <button class="next">Next</button>
+      </div>
+    </section>
+    
+    <div class="modal-screen hidden">
+      <article class="modal">
+        <header>
+          <span>Quiz Results</span>
+          <button class="x-btn">X</button>
+        </header>
+        <main>
+          <div class="result-card">
+            <p>Result:</p>
+            <p class="result bad">Bad!</p>
+          </div>
+          <p class="final-result">
+            You answered <span class="answered-questions">2</span> questions correctly out of
+            <span class="total-questions">12</span> questions.
+          </p>
+        </main>
+        <footer class="modal-footer">
+          <button class="close">Cancel</button>
+          <button class="continue">Try Again</button>
+        </footer>
+      </article>
+    </div>
+    <footer class="copyright">
+      &copy; Designed with 💚 by
+      <a href="https://sabzlearn.ir" target="_blank">SabzLearn</a>
+    </footer>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
